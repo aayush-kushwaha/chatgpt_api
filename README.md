@@ -1,35 +1,106 @@
 # chatgpt_api
 
-This repository contains a standalone Python script called chat.py that uses OpenAI's GPT-3 language model to generate responses to user input. The script can be run locally on your machine and does not require deployment to a hosting provider.
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ChatGPT API</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			line-height: 1.5;
+			margin: 0;
+			padding: 0;
+		}
 
-Getting Started
-To use this script, you will need an OpenAI API key. You can sign up for an API key here. Once you have an API key, you can set it as an environment variable in your terminal or in a configuration file called config.py.
+		.container {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 20px;
+		}
 
-To set the API key as an environment variable, run the following command in your terminal:
+		h1, h2, h3 {
+			margin-top: 0;
+		}
 
-arduino
-Copy code
-export OPENAI_API_KEY=<your-api-key>
-To set the API key in a config.py file, create a new file in the same directory as the chat.py file with the following contents:
+		h1 {
+			font-size: 48px;
+			font-weight: bold;
+			text-align: center;
+			margin-bottom: 20px;
+		}
 
-makefile
-Copy code
-API_KEY = "<your-api-key>"
-Installing Dependencies
-Before you can run the script, you will need to install the required dependencies. You can do this by running the following command in your terminal:
+		h2 {
+			font-size: 36px;
+			margin-bottom: 10px;
+		}
 
-Copy code
-pip install openai
-This will install the openai package, which is required to communicate with the OpenAI API.
+		h3 {
+			font-size: 24px;
+			margin-bottom: 10px;
+		}
 
-Running the Script
-To run the script, open a terminal window and navigate to the directory containing the chat.py file. Then, run the following command:
+		p {
+			margin: 0;
+			padding: 0;
+			font-size: 16px;
+			line-height: 1.5;
+			margin-bottom: 10px;
+		}
 
-Copy code
-python chat.py
-This will start the script and you will be prompted to enter a question or statement to get a response from the GPT-3 model. You can keep asking questions until you're done by typing 'n' when asked if you have any further questions.
+		code {
+			font-family: Consolas, monospace;
+			font-size: 14px;
+			background-color: #eee;
+			padding: 5px;
+			border-radius: 5px;
+			overflow: auto;
+			display: inline-block;
+		}
 
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+		pre {
+			font-family: Consolas, monospace;
+			font-size: 14px;
+			background-color: #eee;
+			padding: 10px;
+			border-radius: 5px;
+			overflow: auto;
+		}
 
-Feel free to modify and use this code for your own projects. If you have any questions or feedback, please create an issue or send me a message.
+		.highlight {
+			color: #007bff;
+			font-weight: bold;
+		}
+
+		.button {
+			display: inline-block;
+			background-color: #007bff;
+			color: #fff;
+			padding: 10px 20px;
+			border-radius: 5px;
+			text-decoration: none;
+			font-size: 18px;
+			margin-top: 20px;
+		}
+
+		.button:hover {
+			background-color: #0056b3;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>ChatGPT API</h1>
+
+		<p>This repository contains a standalone Python script called <code>chat.py</code> that uses OpenAI's GPT-3 language model to generate responses to user input. The script can be run locally on your machine and does not require deployment to a hosting provider.</p>
+
+		<h2>Getting Started</h2>
+
+		<p>To use this script, you will need an OpenAI API key. You can sign up for an API key <a href="https://beta.openai.com/signup/">here</a>. Once you have an API key, you can set it as an environment variable in your terminal or in a configuration file called <code>config.py</code>.</p>
+
+		<p>To set the API key as an environment variable, run the following command in your terminal:</p>
+
+		<pre><code>export OPENAI_API_KEY=<span class="highlight">&lt;your-api-key&gt;</span></code></pre>
+
+		<p>To set the API key in a <code>config.py</code> file, create a new file in the same directory as the <code>chat.py</code> file with the following contents:</p>
+
+		<pre><code>API_KEY = "<span class="highlight">&lt;your-api-key&gt;</span>"</code
