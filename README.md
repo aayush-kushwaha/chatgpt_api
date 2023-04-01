@@ -103,4 +103,4 @@
 
 		<p>To set the API key in a <code>config.py</code> file, create a new file in the same directory as the <code>chat.py</code> file with the following contents:</p>
 
-		<pre><code>API_KEY = "<span class="highlight">&lt;your-api-key&gt;</span>"</code
+		<pre><code>API_KEY = "<span class="highlight">&lt;your-api-key&gt;</span>"</code>
